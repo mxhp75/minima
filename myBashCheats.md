@@ -17,19 +17,20 @@ In the Unix shell, run a program in the background by appending an `&` (ampersan
 
   ```
     $ program1 input.txt > results.txt &
-  
-  ```
+ 
    [1] 12345 
+  ```
    
 > nb: we use the `>` to **redirect** the output to a file.
 
 Running the above line of code will return this *process ID* (PID) from the shell rather than any progress we would otherwise see printed to the terminal.
 
 -> We can use the ID to check on the status of our job by running:
-  ```
+ ```
    $ jobs
-  ```
+ 
    [1] + Running program1 input.txt > results.txt 
+ ```
  
  We can see that our job is number [1]. This is important if we want to return to see how the job is running.
  
@@ -77,6 +78,20 @@ Saying Hi to friends might not come up that often, but creating project (and oth
 > nb: using -p after `mkdir` tells Bash to make any directories along the way if they don't already exist.  
 
 # C
+
+**Change Directry**
+
+Moving between directories is quite easy on the command line if you keep your directory structure in mind.
+
+You can treat your directory structure like a series of nested trees or walkways that you can move up and down through, or you can move around using an **absolute path**
+
+The main command when changing directories is `cd`, quite literally "**c**hange **d**irectory"
+
+```
+  $ cd ../
+```
+
+will move you "up" one directory.
 
 **Concatenate**
 
@@ -184,10 +199,48 @@ The `cut` utility has a good man page, this is what I use to cut culumns 1, 7, a
   $ cut -f 1,7- source.txt > just_counts.txt      # -f selects only fields - here that acts like columns in a spreadsheet
 ```
 
-
 # D
 
+**Divert**
+
+Diverting output between programmes can be a good way of saving intermediate files you may want (or need) to look at later for things like quality checking and debugging.
+
+To divert standard output to a temporary file while also sending to standard out (and therefore to another utility or program if that's what you want) you can use `tee`.
+
+```
+  $ program1 input.txt | tee intermediate_file.txt | program2 > results.txt
+```
+
 # E
+
+**Exit Status**
+
+You can find the exit status of the previous program run by using
+
+```
+  $ echo $?
+```
+> nb: `$?` is where the Unix shell puts the exit message after you run a command on the command line.
+
+An exit status of 
+  - `0` = process ran successfully
+  - `!0` = some sort of error occured
+  
+-> Use `&&` if you want the next command to continue only if the previous process was successful
+-> Use `||` if you want the next command to continue only if the previoud process was un-successful
+-> Combine these "only if successful" and "only if not successful" options on the command line.
+
+```
+  $ program1 input.txt > intermediate_results.txt && \
+    program2 intermediate_results.txt > final_results.txt
+```
+
+Here `input.txt` is fed into `program1` and the output from `program1` is redirected to `intermediate_results.txt`. From here, because we have used `&&`, this intermediate file will only be fed into `program2` if the first process completed successfully.
+
+> nb: You can also use a **;** (semicolon) for multiple commands with no care for the exit status.
+``` 
+  $ cd ../; ls            # change directory up one, and then list.
+```
 
 # F
 
