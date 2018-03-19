@@ -212,6 +212,10 @@ To divert standard output to a temporary file while also sending to standard out
 
 # E
 
+**Echo**
+
+`Echo` is used in the terminal to print output to the screen. Often `$ echo Hello World` is the very first command people will use in the terminal. There are many other uses for `echo`, for example if I type `echo $0` the terminal will return `-bash`, which is the shell I use.
+
 **Exit Status**
 
 You can find the exit status of the previous program run by using
