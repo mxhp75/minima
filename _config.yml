@@ -38,6 +38,7 @@ minima:
 header_pages:
  - about.md
  - myBashCheats.md
+ - cheatSheets.md
 
 # Build settings
 markdown: kramdown
