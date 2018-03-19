@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+In 2010 my life changed with the birth of a beautiful baby boy. My corporate life of constantly making more with less so we could sell ever increasing numbers of widgets to people who didn't always need them no longer held any pull for me to return. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Instead I took the opportunity to attend university. A previlage I thought I would never have. After commpleting an undergraduate and honours degree with The University of Adelaide I have been lucky enough to begin a new journey - that of a PhD candidate.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+This blog is intended to help me to track my progress, and If possible provide some comfort, advice, and maybe even comic relief to other students who like me are trying to do something in this world that will leave it as a better place for our children.
 
+I am far from an expert, rather I am learning along the path and would like to share this learning with others who like me, might be new to the word of coding and Bioinformatics.
 
-[jekyll-organization]: https://github.com/jekyll
