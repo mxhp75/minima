@@ -162,7 +162,7 @@ To use your conda virtual environment
 and to deactivate once you're finished for the day
   3. `$ source deactivate myEnvironmentName`
   
-For a great conda cheat sheet ![Conda Cheat](/condaCheatSheet.pdf)
+For a great conda cheat sheet ![Conda Cheat](/conda-cheatsheet.pdf)
 
 **Copy**
 
