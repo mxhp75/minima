@@ -1,14 +1,13 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: The PhD Blog for women over 40
+author: Melanie Smith
+email: melanie.smith@adelaide.edu.au
 description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Ever wonder what it would be like to quit your career at 40 and start a new Undergrad and then decide what the hey - let's do a PhD? 
+  Well I did. This is my journey.
 
 # social links
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: mxhp75
+github_username:  mxhp75
 rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
@@ -36,8 +35,8 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
+header_pages:
+ - about.html
 
 # Build settings
 markdown: kramdown
