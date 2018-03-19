@@ -29,7 +29,7 @@ Running the above line of code will return this *process ID* (PID) from the shel
  ```
    $ jobs
  
-   [1] + Running program1 input.txt > results.txt 
+  [1] + Running program1 input.txt > results.txt 
  ```
  
  We can see that our job is number [1]. This is important if we want to return to see how the job is running.
@@ -56,10 +56,9 @@ We can reduce our keystrokes by getting the terminal to do some work for us. Say
 
   ```
    $ echo Hello-{John, Paul, Ringo}
-  ```
-  
+
   Hello-John Hello-Paul Hello-Ringo
-  
+  ```  
 > nb: Bash uses the `echo` command to print to the terminal
   
 **Using Brace Expansion to make a Project Directory**
