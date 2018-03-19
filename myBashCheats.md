@@ -1,3 +1,8 @@
+---
+layout: page
+title: myBashCheats
+---
+
 # A
 
 # B
@@ -12,7 +17,7 @@ In the Unix shell, run a program in the background by appending an `&` (ampersan
   ```
    [1] 12345 
    
-> nd: we use the `>` to **redirect** the output to a file.
+> nb: we use the `>` to **redirect** the output to a file.
 
 Running the above line of code will return this *process ID* (PID) from the shell rather than any progress we would otherwise see printed to the terminal.
 
