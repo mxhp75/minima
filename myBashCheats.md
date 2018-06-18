@@ -78,7 +78,7 @@ Saying Hi to friends might not come up that often, but creating project (and oth
 
 # C
 
-**Change Directry**
+**Change Directory**
 
 Moving between directories is quite easy on the command line if you keep your directory structure in mind.
 
@@ -178,7 +178,7 @@ Making a copy of a file from the command line is as easy as `cp <source> <destin
 >    you can use `-i` to make the process interactive, or `-v` to make the process "verbose" (print what's happening to the screen)
 
 
-**Count file in a Directory**
+**Count the number of files in a Directory**
 
 It's surprising how many times you need to just count the files you have in a directory
 
@@ -201,7 +201,7 @@ $ awk `{print NF}` file | sort -nu | head -n 1
 
 **Count the number of rows in a file**
 
-Some days you need to know how many rows youe file has.
+Some days you need to know how many rows your file has.
 
 ```
 $ cat file | wc -l
