@@ -190,6 +190,23 @@ will return the number of files there are in the directory you are currently in.
 
 > nb: this will also work if you use `ll | wc -l` or `ls -l | wc -l` but be careful as both of these options have a header and will increas the count by 1.
 
+**Count the number of columns in a file**
+
+Some days you need to know how many columns your file has.
+
+```
+$ awk `{print NF}` file | sort -nu | head -n 1
+```
+> nb: check both `head -n 1` and `tail -n 1` if youre not sure the columns at the top and bottom of the document are the same.
+
+**Count the number of rows in a file**
+
+Some days you need to know how many rows youe file has.
+
+```
+$ cat file | wc -l
+```
+
 **Cut**
 
 The `cut` utility has a good man page, this is what I use to cut culumns 1, 7, and everything after 7 from the feature counts output file.
